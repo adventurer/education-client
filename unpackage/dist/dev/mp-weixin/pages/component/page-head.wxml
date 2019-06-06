@@ -1,1 +1,0 @@
-<view class="cu-bar"><view class="action"><text data-event-opts="{{[['tap',[['backTo']]]]}}" class="cuIcon-back" bindtap="__e"></text><text data-event-opts="{{[['tap',[['backTo']]]]}}" bindtap="__e">返回</text></view><view class="content text-bold text-xl">{{''+title+''}}</view></view>

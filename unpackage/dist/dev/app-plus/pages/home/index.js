@@ -1,2 +1,0 @@
-setCssToHead([".",[1],"tower-swiper .",[1],"tower-item { -webkit-transform: scale(-webkit-calc(0.5 + var(--index) / 10)); -ms-transform: scale(calc(0.5 + var(--index) / 10)); transform: scale(calc(0.5 + var(--index) / 10)); margin-left: -webkit-calc(var(--left) * ",[0,100]," - ",[0,150],"); margin-left: calc(var(--left) * ",[0,100]," - ",[0,150],"); z-index: var(--index); }\n",],undefined,{path:"./pages/home/index.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/home/index.wxml') } }));
