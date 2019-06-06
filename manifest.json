@@ -55,7 +55,11 @@
         }
     },
     "h5" : {
-        "title" : "ColorUi for UniApp",
-        "domain" : "demo.color-ui.com"
+        "title" : "education",
+        "domain" : "demo.color-ui.com",
+        "router" : {
+            "base" : "/h5/",
+            "mode" : "history"
+        }
     }
 }

@@ -2,7 +2,7 @@
 	<view class="cu-bar">
 		<view class="action">
 			<text class="cuIcon-back" @click="backTo()"></text>
-			<text @click="backTo()">返回</text>
+			<fa-icon @click="backToHome()" type="home text-black margin-left" size="18"></fa-icon>
 		</view>
 		<view class="content text-bold text-xl">
 			{{title}}
@@ -30,6 +30,11 @@
 			backTo(e) {
 				uni.navigateBack({
 					delta: 1
+				});
+			},
+			backToHome(e){
+				uni.navigateTo({
+					url: '/pages/index/index'
 				});
 			}
 		}
