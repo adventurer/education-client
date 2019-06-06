@@ -1,0 +1,1 @@
+<view class="cu-bar bg-white" isBack="{{true}}"><view class="action"><text class="cuIcon-homefill text-gray" slot="backText"></text>首页</view><view class="content text-bold">鲜亮的高饱和色彩，专注视觉的小程序组件库</view><view class="action"><text class="cuIcon-cardboardfill text-grey"></text><text class="cuIcon-recordfill text-red"></text></view></view>
