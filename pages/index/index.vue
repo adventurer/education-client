@@ -1,14 +1,7 @@
 <template>
 	<view>
-
-		<view class="flex-sub text-center margin-top">
-			<view class="text-xl padding">
-				<text class="text-black text-bold">猿职网</text>
-			</view>
-		</view>
-		
-
 		<home v-if="PageCur=='home'"></home>
+		<community v-if="PageCur=='community'"></community>
 		<basics v-if="PageCur=='basics'"></basics>
 		<components v-if="PageCur=='component'"></components>
 		<plugin v-if="PageCur=='plugin'"></plugin>
@@ -21,12 +14,12 @@
 					<view class="cuIcon-homefill"></view> 首页
 				</view>
 			</view>
-			<view class="action" @click="NavChange" data-cur="component">
-				<view class="action" v-bind:class="[PageCur=='component'? 'text-blue' : '']">
+			<view class="action" @click="NavChange" data-cur="community">
+				<view class="action" v-bind:class="[PageCur=='community'? 'text-blue' : '']">
 					<view class="cuIcon-similar"></view> 社区
 				</view>
 			</view>
-			<view class="action" @click="NavChange" data-cur="plugin">
+			<view class="action" @click="NavChange" data-cur="component">
 				<view class="action text-gray add-action">
 					<button class="cu-btn cuIcon-add bg-green shadow"></button>
 					速记

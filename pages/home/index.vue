@@ -1,11 +1,19 @@
 <template>
 	<view>
-		<view class="cu-bar search">
-			<view class="search-form round">
-				<text class="cuIcon-search"></text>
-				<input @focus="toSearchPage()" @blur="toSearchPage()" :adjust-position="false" type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
+		
+		<view class="cu-bar fixed bg-gray">
+			<view class="flex-treble text-center padding-lg">
+				<view class="text-xl margin-bottom-sm">
+					<text class="text-black text-bold">猿职网</text>
+				</view>
+				<view class="search-form round">
+					<text class="cuIcon-search"></text>
+					<input @click="toSearchPage()" type="text" placeholder="搜索图片、文章、视频" confirm-type="search" disabled="true"></input>
+				</view>
 			</view>
 		</view>
+		<view class="tm"></view>
+		
 		<view>
 			<!-- #ifndef MP-ALIPAY -->
 			<swiper @click="toDetailPage()" class="card-swiper" :class="dotStyle?'square-dot':'round-dot'" :indicator-dots="true" :circular="true"
@@ -28,67 +36,11 @@
 		</scroll-view>
 		
 		<!-- 列表开始 -->
-		
 		<view class="cu-list menu-avatar">
-			<view class="cu-item" :url="'/pages/detail/index'" navigateTo>
-				<image src="/static/ke.jpg" class="png" mode="aspectFit"></image>
-				<view>
-					<view class="text-grey">凯尔</view>
-					<view class="text-gray text-sm flex">
-						<view class="text-cut">
-							我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
-						</view> 
-					</view>
-				</view>
-			</view>
 			<view class="cu-item">
-				<image src="/static/ke.jpg" class="png" mode="aspectFit"></image>
-				<view>
-					<view class="text-grey">凯尔</view>
-					<view class="text-gray text-sm flex">
-						<view class="text-cut">
-							我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
-						</view> 
-					</view>
-				</view>
-			</view>
-			<view class="cu-item">
-				<image src="/static/ke.jpg" class="png" mode="aspectFit"></image>
-				<view>
-					<view class="text-grey">凯尔</view>
-					<view class="text-gray text-sm flex">
-						<view class="text-cut">
-							我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
-						</view> 
-					</view>
-				</view>
-			</view>
-			<view class="cu-item">
-				<image src="/static/ke.jpg" class="png" mode="aspectFit"></image>
-				<view>
-					<view class="text-grey">凯尔</view>
-					<view class="text-gray text-sm flex">
-						<view class="text-cut">
-							我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
-						</view> 
-					</view>
-				</view>
-			</view>
-			<view class="cu-item">
-				<image src="/static/ke.jpg" class="png" mode="aspectFit"></image>
-				<view>
-					<view class="text-grey">凯尔</view>
-					<view class="text-gray text-sm flex">
-						<view class="text-cut">
-							我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
-						</view> 
-					</view>
-				</view>
-			</view>
-			<view class="cu-item">
-				<image src="/static/ke.jpg" class="png" mode="aspectFit"></image>
-				<view>
-					<view class="text-grey">凯尔</view>
+				<view class="cu-avatar ll" style="background-image:url(http://localhost:8080/h5/static/ke.jpg);"></view>
+				<view class="content">
+					<view class="text-black">凯尔</view>
 					<view class="text-gray text-sm flex">
 						<view class="text-cut">
 							我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
@@ -125,7 +77,7 @@
 			};
 		},
 		onLoad() {
-			this.TowerSwiper('swiperList');
+			// this.TowerSwiper('swiperList');
 			// 初始化towerSwiper 传已有的数组名即可
 		},
 		methods: {
@@ -156,4 +108,17 @@
 		margin-left: calc(var(--left) * 100upx - 150upx);
 		z-index: var(--index);
 	}
+	
+	.tm{
+		margin-top: 200upx;
+	}
+	
+	.img {
+        width: 160upx;
+        height: 100upx;
+    }
+	
+	cover-image {
+        display: inline-block;
+    }
 </style>

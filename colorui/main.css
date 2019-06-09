@@ -910,6 +910,12 @@ button.cuIcon.lg {
 	font-size: 2.5em;
 }
 
+.cu-avatar.ll {
+	height: 90upx;
+	width: 140upx;
+	font-size: 2.5em;
+}
+
 .cu-avatar .avatar-text {
 	font-size: 0.4em;
 }
@@ -1229,8 +1235,7 @@ button.cuIcon.lg {
 
 .cu-list.menu-avatar>.cu-item .content {
 	position: absolute;
-	left: 146upx;
-	width: calc(100% - 96upx - 60upx - 120upx - 20upx);
+	left: 180upx;
 	line-height: 1.6em;
 }
 

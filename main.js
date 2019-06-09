@@ -10,6 +10,9 @@ Vue.component('faIcon', faIcon)
 import home from './pages/home/index.vue'
 Vue.component('home',home)
 
+import community from './pages/community/index.vue'
+Vue.component('community',community)
+
 import basics from './pages/basics/home.vue'
 Vue.component('basics',basics)
 

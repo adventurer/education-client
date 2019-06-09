@@ -109,6 +109,9 @@
 		},{
 			"path": "pages/search/index",
 			"style": {}
+		},{
+			"path": "pages/community/index",
+			"style": {}
 		}
     ],
 	"globalStyle": {
