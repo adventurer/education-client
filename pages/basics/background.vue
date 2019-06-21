@@ -88,7 +88,7 @@
 				</view>
 			</view>
 		</view>
-<!-- 		<view class="cu-bar bg-white margin-top">
+		<view class="cu-bar bg-white margin-top">
 			<view class="action">
 				<text class="cuIcon-title text-blue"></text>视频背景
 			</view>
@@ -104,7 +104,7 @@
 					我必须连同希望一起毁坏……
 				</cover-view>
 			</cover-view>
-		</view> -->
+		</view>
 		
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">

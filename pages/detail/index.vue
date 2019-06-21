@@ -9,7 +9,7 @@
 				</view>
 				<view class="">
 					<fa-icon type="play-circle text-primary margin-left" size="24"></fa-icon>
-					<text class="text-blue text-xxl">试看</text>
+					<text class="text-blue text-xxl" @tap="showModal" data-target="bottomModal">试看</text>
 				</view>
 				<view class="padding">从零开始重构一个功能完整的JS库，并进行单元测试与部署发布，是学习造轮子的不二之选</view>
 			</view>
@@ -88,8 +88,18 @@
 			</view>
 		</view>
 		
-		
-		
+		<!-- model -->
+		<view class="cu-modal bottom-modal" :class="modalName=='bottomModal'?'show':''">
+			<view class="cu-dialog">
+				<view class="cu-bar bg-white">
+					<view class="action text-green"></view>
+					<view class="action text-blue" @tap="hideModal">关闭</view>
+				</view>
+				<view class="">
+					<video style="width: 100%;" id="myVideo" src="http://img.cdn.qiniu.dcloud.net.cn/wap2appvsnative.mp4"></video>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -97,14 +107,20 @@
 <script>
 	export default {
 		data() {
-		return {
+			return {
+				modalName: null,
 				strings:`
 				<h1>详情页面富文本</h1>
 				`
 			}
 		},
 		methods: {
-			
+			showModal(e) {
+				this.modalName = e.currentTarget.dataset.target
+			},
+			hideModal(e) {
+				this.modalName = null
+			},
 		}
 	}
 </script>

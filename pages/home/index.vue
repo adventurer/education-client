@@ -2,7 +2,7 @@
 	<view>
 		
 		<view class="cu-bar fixed bg-gray">
-			<view class="flex-treble text-center padding-lg">
+			<view class="flex-treble text-center padding-lg" :class="BlackHead?'margin-top-xl':'margin-top-xs'">
 				<view class="text-xl margin-bottom-sm">
 					<text class="text-black text-bold">猿职网</text>
 				</view>
@@ -73,7 +73,8 @@
 				}],
 				dotStyle: false,
 				towerStart: 0,
-				direction: ''
+				direction: '',
+				BlackHead:this.BlackHead
 			};
 		},
 		onLoad() {

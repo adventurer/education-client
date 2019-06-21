@@ -4,13 +4,19 @@
 		onLaunch: function() {
 			uni.getSystemInfo({
 				success: function(e) {
+					console.log(e.model.indexOf('X'))
+					if (e.model.indexOf('X') >= 0) {
+						Vue.prototype.BlackHead = true
+					}else{
+						Vue.prototype.BlackHead = false
+					}
 					// #ifndef MP
 					Vue.prototype.StatusBar = e.statusBarHeight;
 					if (e.platform == 'android') {
 						Vue.prototype.CustomBar = e.statusBarHeight + 50;
 					} else {
 						Vue.prototype.CustomBar = e.statusBarHeight + 45;
-					};
+					}; 
 					// #endif
 
 					// #ifdef MP-WEIXIN
